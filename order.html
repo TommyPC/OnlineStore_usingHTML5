@@ -1,0 +1,59 @@
+<!-- Tommy Poulin-Corriveau
+Matricule 20252908 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Commande</title>
+</head>
+
+<body>
+    <header>
+    <a href="index.html">
+      <img src="assets/img/logo.svg" alt="Logo">
+    </a> 
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="products.html">Produits</a>
+      <a href="contact.html">Contact</a>
+      <a href="shopping-cart.html">Panier</a>
+    </nav>
+  </header> 
+
+  <main>
+    <h1>Commande</h1>
+
+    <form action="confirmation.html" method="post">
+      <section>
+        <h2>Contact</h2>
+        <label for="firstname">Prénom</label><br>
+        <input type="text" id="firstname" name="prenom" size="22" required><br><br>
+        <label for="lastname">Nom</label><br>
+        <input type="text" id="lastname" name="nom" size="22" required><br><br>
+        <label for="email">Adresse courriel</label><br>
+        <input type="text" id="email" name="courriel" size="22" placeholder="nom@umontreal.ca" required><br><br>
+        <label for="phone">Numéro de téléphone</label><br>
+        <input type="text" id="phone" name="telephone" size="22" maxlength="16" placeholder="1 - (_ _ _) - _ _ _ - _ _ _ _" required>
+      </section>
+  
+      <section>
+        <h2>Paiement</h2>
+        
+        <label for="creditcard">Numéro de carte de crédit</label><br>
+        <input type="text" id="creditcard" name="carte" size="22" maxlength="19" placeholder="0000 0000 0000 0000" required><br><br>
+        <label for="creditcardexpiry">Date d'expiration</label><br>
+        <input type="date" id="creditcardexpiry" name="expiration" required><br><br><br>
+      </section>
+      <input type="submit" value="Payer"/>
+    </form>
+  </main>
+<!-- Footer qui dois être présent sur chaque page (Nom complet + matricule) -->
+  <footer>
+    <center>Tommy Poulin-Corriveau Matricule 20252908</center>
+  </footer>
+
+</body>
+</html>
